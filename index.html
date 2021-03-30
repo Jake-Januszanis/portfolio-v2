@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat&display=swap" rel="stylesheet">
     <title>Jake Januszanis Front End Web Developer</title>
 </head>
 <body>
-    <section class="home">
-        <h3>Jake Januszanis</h3>
+    <div class="home">
+        <!-- <div class="bg-circle"></div> -->
         <div class="navbar">
+            <h3 class="navbar__logo">Jake Januszanis</h3>
             <a class="navbar__item" href="#">Home</a>
             <a class="navbar__item" href="#">About</a>
             <a class="navbar__item" href="#">Projects</a>
@@ -28,11 +30,13 @@
             <span class="fab fa-github"></span>
             <span class="fab fa-linkedin"></span>
         </div>
-        <a class="scroll-button" href="#"><span class="fas fa-angle-double-down"></span></a>
-    </section>
+        <a class="scroll-button" href="#"><i class="fas fa-angle-double-down"></i></a>
+        
+    </div>
 
-    <section class="about-section">
+    <div class="about-section">
         <h1 class="about-section__title">About Me</h1>
+        <div class="about-section__container">
         <p class="about-section__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel habitant ut ornare cras commodo tristique eu. Nunc ac ornare tincidunt in consectetur fermentum, quam.
             Egestas ac adipiscing pharetra nisl, facilisis porttitor rutrum. Mauris neque fringilla aliquam suscipit vel tempus.
@@ -41,29 +45,37 @@
             Sed risus, egestas quam suspendisse et est etiam ut. Feugiat dui fermentum metus luctus risus volutpat ante ipsum id.
         </p>
         <img class="about-section__image" src="svg/about-svg.svg">
+        </div>
         <a class="scroll-button" href="#"><span class="fas fa-angle-double-down"></span></a>
-    </section>
+      
+    </div>
 
-    <section class="projects-section">
+    <div class="projects-section">
         <h1 class="porjects-section__title">Projects</h1>        
-    </section>
+    </div>
 
-    <section class="contact">
+    <div class="contact">
 
         <h1 class="contact__title">Contact</h1>
         <div class="container">
             <form class="contact__form">
-                <label for="name">Name</label>
-                <input class="contact__form-input" type="text" name="name">
+                <div class="contact__form-group">
+                <label class="contact__form-label" for="name">Name</label>
+                <input class="contact__form-input" type="text" id="name" name="name" required>
+                </div>
                 
-                <label for="email">Email</label>
-                <input class="contact__form-input" type="email" name="email">  
+                <div class="contact__form-group">
+                <label class="contact__form-label" for="email">Email</label>
+                <input class="contact__form-input" type="email" name="email" required>  
+                </div>
 
-                <label for="message">Message</label>
-                <textarea class="contact__form-textarea" type="text" name="textarea"></textarea>  
+                <div class="contact__form-group">
+                <label class="contact__form-label" for="message">Message</label>
+                <textarea class="contact__form-textarea" type="text" name="textarea" required></textarea> 
+                </div> 
             </form>
         </div>
-    </section>
+    </div>
 
     
 </body>
