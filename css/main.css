@@ -94,22 +94,42 @@
       margin: 0 auto;
       position: relative;
       top: 3rem;
-      font-size: 3rem; }
+      font-size: 2.7rem; }
     .contact__form-label {
-      position: absolute; }
-    .contact__form-input, .contact__form-textarea {
+      position: absolute;
+      bottom: 0;
+      transition: all .5s ease-in-out; }
+    .contact__form-input {
       border: none;
       border-bottom: 2px solid gray;
       outline: none; }
-      .contact__form-input:focus + label, .contact__form-textarea:focus + label {
-        color: red; }
+      .contact__form-input:focus {
+        border-bottom: 2px solid #0da8b1bf; }
+      .contact__form-input:focus + label,
+      .contact__form-input:valid + label {
+        font-size: 2rem;
+        bottom: 4rem;
+        transition: all .5s ease-in-out; }
+    .contact__form-textarea {
+      border: none;
+      border-bottom: 2px solid gray;
+      outline: none;
+      resize: none;
+      font-size: 2rem; }
+      .contact__form-textarea:focus {
+        border-bottom: 2px solid #0da8b1bf; }
+      .contact__form-textarea:focus + label,
+      .contact__form-textarea:valid + label {
+        font-size: 2rem;
+        bottom: 10rem;
+        transition: all .5s ease-in-out; }
 
 .container {
   height: 70%;
   background-color: white;
   box-shadow: 11px 4px 50px 15px rgba(0, 0, 0, 0.25);
   width: 70%;
-  margin: 0 auto;
+  margin: 5rem auto;
   border-radius: 20px; }
 
 .projects-section {
