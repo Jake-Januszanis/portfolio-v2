@@ -1,6 +1,5 @@
 .home {
   background-color: #ffffff;
-  max-width: 1900px;
   margin: 0 auto;
   height: 100vh;
   position: relative; }
@@ -31,10 +30,12 @@
   gap: 2rem;
   font-size: 2.4rem;
   padding-right: 3rem;
-  margin-top: 3rem; }
+  padding-top: 3rem; }
   .navbar__item {
     text-decoration: none;
     color: #1c1c1c; }
+    .navbar__item:hover {
+      color: #0da8b1bf; }
   .navbar__logo {
     font-family: 'Michroma', sans-serif;
     font-size: 2.8rem;
@@ -50,7 +51,11 @@
   position: absolute;
   bottom: 4rem;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  transition: all 1s ease-in-out; }
+  .scroll-button:hover {
+    font-size: 15rem;
+    transition: 1s ease-in-out; }
 
 .about-section {
   background-color: #f7f7f7;
@@ -123,6 +128,21 @@
         font-size: 2rem;
         bottom: 10rem;
         transition: all .5s ease-in-out; }
+    .contact__form-button {
+      margin: 0 auto;
+      background-color: #0da8b1bf;
+      width: 15%;
+      height: 4rem;
+      border-radius: 10px;
+      font-size: 2.5rem;
+      border: none;
+      box-shadow: 2px 2px 5px 4px #ccc;
+      outline: none;
+      transition: all 1s ease; }
+      .contact__form-button:hover {
+        transform: scale(1.2);
+        box-shadow: 3px 0px 5px 0px #ccc;
+        transition: all 1s ease; }
 
 .container {
   height: 70%;
@@ -133,7 +153,11 @@
   border-radius: 20px; }
 
 .projects-section {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }

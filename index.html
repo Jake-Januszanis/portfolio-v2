@@ -10,8 +10,8 @@
     <title>Jake Januszanis Front End Web Developer</title>
 </head>
 <body>
-    <div class="home">
-        <!-- <div class="bg-circle"></div> -->
+    <div class="home" id="home">
+        <!-- <img class="corner-design" src="svg/corner-design.svg"> -->
         <div class="navbar">
             <h3 class="navbar__logo">Jake Januszanis</h3>
             <a class="navbar__item" href="#">Home</a>
@@ -30,11 +30,12 @@
             <span class="fab fa-github"></span>
             <span class="fab fa-linkedin"></span>
         </div>
-        <a class="scroll-button" href="#"><i class="fas fa-angle-double-down"></i></a>
+
+        <a class="scroll-button" href="#about"><i class="fas fa-angle-double-down"></i></a>
         
     </div>
 
-    <div class="about-section">
+    <div class="about-section" id="about">
         <h1 class="about-section__title">About Me</h1>
         <div class="about-section__container">
         <p class="about-section__description">
@@ -46,16 +47,16 @@
         </p>
         <img class="about-section__image" src="svg/about-svg.svg">
         </div>
-        <a class="scroll-button" href="#"><span class="fas fa-angle-double-down"></span></a>
+        <a class="scroll-button" href="#projects"><span class="fas fa-angle-double-down"></span></a>
       
     </div>
 
-    <div class="projects-section">
-        <h1 class="porjects-section__title">Projects</h1>        
+    <div class="projects-section" id="projects">
+        <h1 class="projects-section__title">Projects</h1>  
+        <a class="scroll-button" href="#contact"><span class="fas fa-angle-double-down"></span></a>      
     </div>
 
-    <div class="contact">
-
+    <div class="contact" id="contact">
         <h1 class="contact__title">Contact</h1>
         <div class="container">
             <form class="contact__form">
@@ -75,8 +76,9 @@
                 
                 <textarea class="contact__form-textarea" type="text" name="textarea" rows="3"  required></textarea> 
                 <label class="contact__form-label" for="message">Message:</label>
-
+            
                 </div> 
+                <button type="submit" class="contact__form-button">Send</button>
             </form>
         </div>
     </div>
