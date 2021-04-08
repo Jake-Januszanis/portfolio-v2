@@ -10,8 +10,9 @@
     <title>Jake Januszanis Front End Web Developer</title>
 </head>
 <body>
+
+    <!-- ******Home Screen****  -->
     <div class="home" id="home">
-        <!-- <img class="corner-design" src="svg/corner-design.svg"> -->
         <div class="navbar">
             <h3 class="navbar__logo">Jake Januszanis</h3>
             <a class="navbar__item" href="#">Home</a>
@@ -20,20 +21,25 @@
             <a class="navbar__item" href="#">Contact</a>
             <a class="navbar__item" href="#">Resume</a>
         </div>
-        <h1 class="home__title">Front End Web Developer</h1>
-        <p class="home__description">
+        <div class="home__text">
+        <h1 class="home__text-title">Front End Web Developer</h1>
+        <p class="home__text-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Sem lacus, condimentum nunc maecenas volutpat diam lacus, scelerisque sed.
         </p>
-
+        </div>        
+        
         <div class="home__buttons">
             <span class="fab fa-github"></span>
             <span class="fab fa-linkedin"></span>
         </div>
 
-        <a class="scroll-button" href="#about"><i class="fas fa-angle-double-down"></i></a>
+        <a class="scroll-button" href="#about"><span class="fas fa-angle-double-down"></span></a>
         
     </div>
+
+
+    <!-- ****About section**** -->
 
     <div class="about-section" id="about">
         <h1 class="about-section__title">About Me</h1>
@@ -45,17 +51,43 @@
             Maecenas rutrum enim in amet, vel nullam mattis tortor et. Erat tellus sit amet nulla in nunc justo.
             Sed risus, egestas quam suspendisse et est etiam ut. Feugiat dui fermentum metus luctus risus volutpat ante ipsum id.
         </p>
-        <img class="about-section__image" src="svg/about-svg.svg">
+        <img class="about-section__image" src="images/about-svg.svg">
         </div>
         <a class="scroll-button" href="#projects"><span class="fas fa-angle-double-down"></span></a>
       
     </div>
 
-    <div class="projects-section" id="projects">
-        <h1 class="projects-section__title">Projects</h1>  
-        <a class="scroll-button" href="#contact"><span class="fas fa-angle-double-down"></span></a>      
+
+    <!-- ****Projects Section**** -->
+    <div class="projects" id="projects">
+        <h1 class="projects__title">Projects</h1>
+        <div class="projects__display">
+
+            <div class="projects__card">
+            <img class="projects__card-image" src="images/weather-app-img.png">
+            <div class="projects__card-description">
+                <h3 class="projects__card-title">React Weather App</h3>
+                <p class="projects__card-text">Weather app that takes 5 digit zipcode and returns current or
+                    5 day extended forecast.
+                </p>
+            </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="projects__card-image" src="images/weather-app-img.png">
+                <div class="projects__card-description">
+                    <h3 class="projects__card-title">React Weather App</h3>
+                    <p class="projects__card-text">Weather app that takes 5 digit zipcode and returns current or
+                        5 day extended forecast.
+                    </p>
+                </div>
+                </div>
+            </div>
+        <a class="scroll-button" href="#contact"><span class="fas fa-angle-double-down"></span></a>   
     </div>
 
+
+    <!-- ****Contact section**** -->
     <div class="contact" id="contact">
         <h1 class="contact__title">Contact</h1>
         <div class="container">
